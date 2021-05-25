@@ -67,6 +67,7 @@ h3 {
   justify-content: center;
   align-self: center;
 }
+
 .btnfonctionnement:hover {
   background-color: #f5edff;
 }
@@ -115,5 +116,11 @@ h3 {
   font-size: medium;
   color: black;
 }
+
+footer {
+  background-color: #353535;
+}
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
