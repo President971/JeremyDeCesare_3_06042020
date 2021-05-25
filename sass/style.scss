@@ -17,12 +17,10 @@ body {
   }
   
   .fa-map-marker-alt {
-    align-items: center;
+    align-self: center;
     color: #353535;
-    display: flex;
     padding-right: 1rem;
-  }
-  
+  }  
   h1 {
     font-size: 1.5rem;
     font-family: "Roboto" sans-serif;
@@ -32,6 +30,10 @@ body {
     font-size: 1rem;
     font-family: "Roboto" sans-serif;
     align-self: center;
+  }
+  h2 {
+    padding-top: 1rem;
+    padding-left: 1.4rem;
   }
   h4 {
     font-size: 1rem;
@@ -50,7 +52,8 @@ body {
     padding-top: 0.05rem;
     padding-bottom: 0.05rem;
     height: 50px;
-    background-color: #FF76DA;
+    background: rgb(233,114,218);
+    background: linear-gradient(123deg, rgba(233,114,218,1) 0%, rgba(164,91,220,1) 100%);
     max-width: 13rem;
     margin: auto;
     border-radius: 25px 25px 25px 25px;
@@ -73,16 +76,21 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
+    &:hover
+    {
+      background-color: #f5edff;
+      cursor: pointer;
+    }
   }
-  .btnfonctionnement:hover {
-    background-color: #f5edff;
-    cursor: pointer;
-  }
-  
   .fa-mobile-alt, .fa-list-ul, .fa-store {
     color: #7e7e7e;
     align-self: center;
     padding-right: 2rem;
+    &:hover
+    {
+      color: #9356dc;
+      cursor: pointer;
+    }
   }
   
   .restaurant {

@@ -25,13 +25,10 @@ header {
 }
 
 .fa-map-marker-alt {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #353535;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-right: 1rem;
 }
 
@@ -46,6 +43,11 @@ h3, h2 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+h2 {
+  padding-top: 1rem;
+  padding-left: 1.4rem;
 }
 
 h4 {
@@ -66,7 +68,8 @@ h4 {
   padding-top: 0.05rem;
   padding-bottom: 0.05rem;
   height: 50px;
-  background-color: #FF76DA;
+  background: #e972da;
+  background: linear-gradient(123deg, #e972da 0%, #a45bdc 100%);
   max-width: 13rem;
   margin: auto;
   border-radius: 25px 25px 25px 25px;
@@ -107,6 +110,11 @@ h4 {
       -ms-grid-row-align: center;
       align-self: center;
   padding-right: 2rem;
+}
+
+.fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover {
+  color: #9356dc;
+  cursor: pointer;
 }
 
 .restaurant {
