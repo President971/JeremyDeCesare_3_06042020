@@ -28,10 +28,16 @@ body {
     font-family: "Roboto" sans-serif;
   }
   
-  h3 {
+  h3,h2 {
     font-size: 1rem;
     font-family: "Roboto" sans-serif;
     align-self: center;
+  }
+  h4 {
+    font-size: 1rem;
+    font-family: "Shrikhand";
+    align-self: center;
+
   }
   
   .reservez {
@@ -49,6 +55,7 @@ body {
     margin: auto;
     border-radius: 25px 25px 25px 25px;
     color: white;
+    cursor: pointer;
   }
   
   .menu {
@@ -69,6 +76,7 @@ body {
   }
   .btnfonctionnement:hover {
     background-color: #f5edff;
+    cursor: pointer;
   }
   
   .fa-mobile-alt, .fa-list-ul, .fa-store {
@@ -116,6 +124,26 @@ body {
   }
   footer {
     background-color: #353535;
-  }   
+    padding-bottom: 1rem;
+  }
+  ol /* liste a puce */{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    cursor: pointer;
+    display: flex;
+    padding-bottom: 0.25rem;
+    font-size: "roboto"sans-serif 0.75rem;
+}
+.fa-utensils, {
+  padding-right: 0.95rem;
+}
+.fa-hands-helping {
+  padding-right: 0.5rem;
+  size: 2rem;
+}
   /*# sourceMappingURL=style.css.map */
   
