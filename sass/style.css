@@ -83,6 +83,7 @@ h4 {
 }
 
 .btnfonctionnement {
+  position: relative;
   padding-top: 0.05rem;
   padding-bottom: 0.05rem;
   height: 76px;
@@ -104,6 +105,15 @@ h4 {
   cursor: pointer;
 }
 
+.btnfonctionnement:hover:hover, .btnfonctionnement:hover .fa-mobile-alt, .btnfonctionnement:hover .fa-list-ul, .btnfonctionnement:hover .fa-store {
+  color: #9356dc;
+  cursor: pointer;
+}
+
+.btnfonctionnement:hover:hover h3, .btnfonctionnement:hover .fa-mobile-alt h3, .btnfonctionnement:hover .fa-list-ul h3, .btnfonctionnement:hover .fa-store h3 {
+  color: black;
+}
+
 .fa-mobile-alt, .fa-list-ul, .fa-store {
   color: #7e7e7e;
   -ms-flex-item-align: center;
@@ -115,6 +125,10 @@ h4 {
 .fa-mobile-alt:hover, .fa-list-ul:hover, .fa-store:hover {
   color: #9356dc;
   cursor: pointer;
+}
+
+.nounderline {
+  text-decoration: none;
 }
 
 .restaurant {
@@ -145,6 +159,36 @@ h4 {
   -webkit-box-shadow: 2px 2px 2px white;
           box-shadow: 2px 2px 2px white;
   margin-bottom: 1rem;
+  position: relative;
+}
+
+.btnnouveau {
+  position: absolute;
+  background-color: #99e2d0;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  width: 80px;
+  height: 28px;
+  color: #0a8d6d;
+  top: 0.65rem;
+  left: 15.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "roboto";
+}
+
+.btnnumero {
+  position: absolute;
+  font-size: 1rem;
+  background-color: #9356dc;
+  padding: 0.1rem;
+  color: white;
+  top: 28px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .imgpalette {
@@ -160,9 +204,14 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 1em;
   font-size: medium;
   color: black;
+  text-decoration: none;
 }
 
 footer {
@@ -198,5 +247,28 @@ li {
 .fa-hands-helping {
   padding-right: 0.5rem;
   size: 2rem;
+}
+
+.photoresto {
+  height: 260px;
+  margin: auto;
+  width: 375px;
+}
+
+.animation {
+  background-color: #f6f6f6;
+}
+
+.animationbody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 62px 260px 1100px 200px;
+      grid-template-rows: 62px 260px 1100px 200px;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=style.css.map */
