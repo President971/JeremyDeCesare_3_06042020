@@ -1,5 +1,6 @@
 body {
     margin: auto;
+    font-family: "Roboto";
   }
   
   header {
@@ -10,7 +11,6 @@ body {
   
   .localisation {
     background-color: #eaeaea;
-    font-family: "roboto";
     display: flex;
     justify-content: center;
     border-top: 3px #cecece solid;
@@ -23,12 +23,10 @@ body {
   }  
   h1 {
     font-size: 1.5rem;
-    font-family: "Roboto" sans-serif;
   }
   
   h3,h2 {
     font-size: 1rem;
-    font-family: "Roboto" sans-serif;
     align-self: center;
   }
   h2 {
@@ -47,7 +45,7 @@ body {
     margin-bottom: 2rem;
   }
   
-  .btnexplorer {
+  .btnexplorer{
     text-align: center;
     padding-top: 0.05rem;
     padding-bottom: 0.05rem;
@@ -141,7 +139,6 @@ body {
     left: 15.2rem;
     font-weight: bold;
     text-align: center;
-    font-family: "roboto"; 
   }
   .btnnumero {
   position: absolute;
@@ -188,7 +185,7 @@ body {
 
     display: flex;
     padding-bottom: 0.25rem;
-    font-size: "roboto"sans-serif 0.75rem;
+    font-size: 0.75rem;
 }
 .fa-utensils, {
   padding-right: 0.95rem;
@@ -205,7 +202,7 @@ body {
 }
 .backanimationbody {
   display: grid;
-  grid-template-rows: 62px 1100px 200px;
+  grid-template-rows: 62px 1300px 200px;
   margin: auto;
   justify-content: center;
   object-fit: contain;
@@ -215,19 +212,85 @@ body {
   height: 90%;
   position: relative;
   top: 12rem;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 375px;
 }
 .h4annexe {
-  padding:0.5rem;
-  font-size: 1.8rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1.4rem;
 }
-@keyframes slideup {
-  from {
-    transform: translatey(1000px);
+.btnmenu{
+  padding-top: 0.5rem;
+  margin-left: 0.5rem;
+  height: 70px;
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 25px 25px 25px 25px;
+  margin-bottom: 0.6rem;
+  align-self: center;
+  &.opacity {
+    animation: opacity 0.5s;
   }
-  to { transform: translateY(0px) 
-    ;
+  &.opacity1 {
+    animation: opacity 1s;
+  }
+  &.opacity2 {
+    animation: opacity 1.5s;
+  }
+  &.opacity3 {
+    animation: opacity 2s;
+  }
+  &.opacity4 {
+    animation: opacity 2.5s;
+  }
+  &.opacity5 {
+    animation: opacity 3s;
+  }
+  &.opacity6 {
+    animation: opacity 3.5s;
+  }
+  &.opacity7 {
+    animation: opacity 4s;
+  }
+  &.opacity8 {
+    animation: opacity 4.5s;
+  }
+}
+.opacity9 {
+  margin-top: 3rem;
+  animation: opacity 5s;
+  width: 190px;
+}
+.opacitytitre1 {
+  animation: opacity 0.25s;
+}
+.opacitytitre2 {
+  animation: opacity 1.75s;
+}
+.opacitytitre3 {
+  animation: opacity 3.25s;
+}
+
+.titremenu {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #99e2d0;
+  width: 40px;
+}
+.txtmenu {
+  display: flex;
+  font-size: 0.9rem;
+  line-height: 150%;
+  padding-left: 1rem;
+}
+@keyframes opacity{
+  from {
+    opacity: 0;
+  }
+  to {
+     opacity: 1;
   }
 }
   /*# sourceMappingURL=style.css.map */
