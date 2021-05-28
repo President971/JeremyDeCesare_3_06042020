@@ -175,6 +175,7 @@ body {
   footer {
     background-color: #353535;
     padding-bottom: 1rem;
+    position: relative;
   }
   ol /* liste a puce */{
     list-style-type: none;
@@ -200,16 +201,34 @@ body {
   height: 260px;
   margin: auto;
   width: 375px;
+  position: absolute;
 }
-.animation {
-  background-color:#f6f6f6 ;
-}
-.animationbody {
+.backanimationbody {
   display: grid;
-  grid-template-rows: 62px 260px 1100px 200px;
+  grid-template-rows: 62px 1100px 200px;
   margin: auto;
   justify-content: center;
   object-fit: contain;
+}
+.animation {
+  background-color:#f6f6f6 ;
+  height: 90%;
+  position: relative;
+  top: 12rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.h4annexe {
+  padding:0.5rem;
+  font-size: 1.8rem;
+}
+@keyframes slideup {
+  from {
+    transform: translatey(1000px);
+  }
+  to { transform: translateY(0px) 
+    ;
+  }
 }
   /*# sourceMappingURL=style.css.map */
   

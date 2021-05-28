@@ -217,6 +217,7 @@ h4 {
 footer {
   background-color: #353535;
   padding-bottom: 1rem;
+  position: relative;
 }
 
 ol {
@@ -253,22 +254,55 @@ li {
   height: 260px;
   margin: auto;
   width: 375px;
+  position: absolute;
 }
 
-.animation {
-  background-color: #f6f6f6;
-}
-
-.animationbody {
+.backanimationbody {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 62px 260px 1100px 200px;
-      grid-template-rows: 62px 260px 1100px 200px;
+  -ms-grid-rows: 62px 1100px 200px;
+      grid-template-rows: 62px 1100px 200px;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.animation {
+  background-color: #f6f6f6;
+  height: 90%;
+  position: relative;
+  top: 12rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.h4annexe {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+}
+
+@-webkit-keyframes slideup {
+  from {
+    -webkit-transform: translatey(1000px);
+            transform: translatey(1000px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes slideup {
+  from {
+    -webkit-transform: translatey(1000px);
+            transform: translatey(1000px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
