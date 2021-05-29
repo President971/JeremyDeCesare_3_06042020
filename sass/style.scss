@@ -57,6 +57,11 @@ body {
     border-radius: 25px 25px 25px 25px;
     color: white;
     cursor: pointer;
+    box-shadow: 2px 2px 2px 2px#b9bbba;
+    &:hover {
+      box-shadow: 3px 3px 3px 3px#b9bbba;
+      opacity: 75%;
+    }
   }
   
   .menu {
@@ -75,6 +80,7 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
+    box-shadow: 2px 2px 2px 2px#b9bbba;
     &:hover
     {
       background-color: #f5edff;
@@ -123,9 +129,14 @@ body {
     height: 15.63em;
     width: 20.88em;
     border-radius: 1em;
-    box-shadow: 2px 2px 2px white;
+    box-shadow: 2px 2px 2px 2px#b9bbba;
     margin-bottom: 1rem;
     position: relative;
+    &:hover
+    {
+      opacity: 75%;
+      box-shadow: 3px 3px 3px 3px#b9bbba;
+    }
   }
   .btnnouveau {
     position: absolute;
@@ -222,14 +233,18 @@ body {
   font-size: 1.4rem;
 }
 .btnmenu{
+  overflow: hidden;
+  position: relative;
   padding-top: 0.5rem;
   margin-left: 0.5rem;
   height: 70px;
   width: 350px;
   background-color: #ffffff;
-  border-radius: 25px 25px 25px 25px;
-  margin-bottom: 0.6rem;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 0.7rem;
   align-self: center;
+  box-shadow: 2px 2px 2px 2px#b9bbba;
+  cursor: pointer;
   &.opacity {
     animation: opacity 0.5s;
   }
@@ -284,6 +299,21 @@ body {
   font-size: 0.9rem;
   line-height: 150%;
   padding-left: 1rem;
+}
+.animationbtn {
+  display: flex;
+  position: relative;
+  height: 78px;
+  width: 60px;
+  top: -8px;
+  right: -128px;
+  border-radius: 0px 20px 20px 0px;
+  background-color:#99e2d0 ;
+  justify-content: center;
+}
+.fa-check-circle {
+  color: white;
+  margin: auto;
 }
 @keyframes opacity{
   from {
