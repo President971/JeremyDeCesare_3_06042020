@@ -235,16 +235,37 @@ body {
 .btnmenu{
   overflow: hidden;
   position: relative;
-  padding-top: 0.5rem;
+  padding-top: 0.4rem;
   margin-left: 0.5rem;
-  height: 70px;
-  width: 350px;
+  height: 68px;
+  width: 348px;
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 0.7rem;
   align-self: center;
   box-shadow: 2px 2px 2px 2px#b9bbba;
   cursor: pointer;
+  &:hover {
+    .btnmenu {
+      animation: scale 1s ;
+    }
+    .animationbtn {
+      display: flex;
+      position: relative;
+      height: 78px;
+      width: 60px;
+      top: -70px;
+      right: -348px;
+      border-radius: 0px 20px 20px 0px;
+      background-color:#99e2d0 ;
+      justify-content: center;
+      animation: slide 1s forwards;
+    }
+    .fa-check-circle {
+      animation: rotating 1s forwards;
+    }
+
+  }
   &.opacity {
     animation: opacity 0.5s;
   }
@@ -296,31 +317,53 @@ body {
 }
 .txtmenu {
   display: flex;
-  font-size: 0.9rem;
-  line-height: 150%;
+  font-size: 1.1rem;
+  line-height: 180%;
   padding-left: 1rem;
-}
-.animationbtn {
-  display: flex;
-  position: relative;
-  height: 78px;
-  width: 60px;
-  top: -8px;
-  right: -128px;
-  border-radius: 0px 20px 20px 0px;
-  background-color:#99e2d0 ;
-  justify-content: center;
+  flex-direction: column;
 }
 .fa-check-circle {
   color: white;
   margin: auto;
 }
+.descriptiontxt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.prix {
+  display: flex;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
 @keyframes opacity{
   from {
     opacity: 0;
   }
   to {
      opacity: 1;
+  }
+}
+@keyframes slide {
+  from {transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+@keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  from { transform: scaleX(348px);
+  }
+  to { transform: scaleX(288px);
   }
 }
   /*# sourceMappingURL=style.css.map */
