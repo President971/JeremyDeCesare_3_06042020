@@ -317,9 +317,9 @@ li {
   cursor: pointer;
 }
 
-.btnmenu:hover .btnmenu {
-  -webkit-animation: scale 1s;
-          animation: scale 1s;
+.btnmenu:hover .prix {
+  -webkit-animation: slideprix 1s forwards;
+          animation: slideprix 1s forwards;
 }
 
 .btnmenu:hover .animationbtn {
@@ -329,7 +329,7 @@ li {
   position: relative;
   height: 78px;
   width: 60px;
-  top: -70px;
+  top: -67.5px;
   right: -348px;
   border-radius: 0px 20px 20px 0px;
   background-color: #99e2d0;
@@ -423,13 +423,14 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   line-height: 180%;
   padding-left: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .fa-check-circle {
@@ -446,6 +447,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-overflow: ellipsis;
 }
 
 .prix {
@@ -499,40 +501,62 @@ li {
 @-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@-webkit-keyframes scale {
+@-webkit-keyframes slideprix {
   from {
-    -webkit-transform: scaleX(348px);
-            transform: scaleX(348px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
   to {
-    -webkit-transform: scaleX(288px);
-            transform: scaleX(288px);
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
   }
 }
 
-@keyframes scale {
+@keyframes slideprix {
   from {
-    -webkit-transform: scaleX(348px);
-            transform: scaleX(348px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
   to {
-    -webkit-transform: scaleX(288px);
-            transform: scaleX(288px);
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */
