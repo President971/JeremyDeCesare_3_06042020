@@ -218,6 +218,13 @@ body {
   justify-content: center;
   object-fit: contain;
 }
+.backanimationbodynote {
+  display: grid;
+  grid-template-rows: 62px 1370px 200px;
+  margin: auto;
+  justify-content: center;
+  object-fit: contain;
+}
 .animation {
   background-color:#f6f6f6 ;
   height: 90%;
@@ -267,31 +274,31 @@ body {
 
   }
   &.opacity {
-    animation: opacity 0.5s;
-  }
-  &.opacity1 {
     animation: opacity 1s;
   }
-  &.opacity2 {
+  &.opacity1 {
     animation: opacity 1.5s;
   }
-  &.opacity3 {
+  &.opacity2 {
     animation: opacity 2s;
   }
-  &.opacity4 {
+  &.opacity3 {
     animation: opacity 2.5s;
   }
-  &.opacity5 {
+  &.opacity4 {
     animation: opacity 3s;
   }
-  &.opacity6 {
+  &.opacity5 {
     animation: opacity 3.5s;
   }
-  &.opacity7 {
+  &.opacity6 {
     animation: opacity 4s;
   }
-  &.opacity8 {
+  &.opacity7 {
     animation: opacity 4.5s;
+  }
+  &.opacity8 {
+    animation: opacity 5s;
   }
 }
 .opacity9 {
@@ -300,13 +307,13 @@ body {
   width: 190px;
 }
 .opacitytitre1 {
-  animation: opacity 0.25s;
+  animation: opacity 0.5s;
 }
 .opacitytitre2 {
-  animation: opacity 1.75s;
+  animation: opacity 2.25s;
 }
 .opacitytitre3 {
-  animation: opacity 3.25s;
+  animation: opacity 3.75s;
 }
 
 .titremenu {
@@ -329,9 +336,13 @@ body {
 }
 .descriptiontxt {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   text-overflow: ellipsis;
+}
+.descriptionanim {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .prix {
   display: flex;
@@ -376,6 +387,14 @@ body {
 
   to {
     width: 60%;
+  }
+}
+@keyframes div {
+  0% {
+    transform: width(100%);
+  }
+  100%{
+    transform: width(70%);
   }
 }
   /*# sourceMappingURL=style.css.map */
