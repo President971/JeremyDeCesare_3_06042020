@@ -1,5 +1,6 @@
 body {
     margin: auto;
+    font-family: "Roboto";
   }
   
   header {
@@ -10,7 +11,6 @@ body {
   
   .localisation {
     background-color: #eaeaea;
-    font-family: "roboto";
     display: flex;
     justify-content: center;
     border-top: 3px #cecece solid;
@@ -23,12 +23,10 @@ body {
   }  
   h1 {
     font-size: 1.5rem;
-    font-family: "Roboto" sans-serif;
   }
   
   h3,h2 {
     font-size: 1rem;
-    font-family: "Roboto" sans-serif;
     align-self: center;
   }
   h2 {
@@ -47,7 +45,7 @@ body {
     margin-bottom: 2rem;
   }
   
-  .btnexplorer {
+  .btnexplorer{
     text-align: center;
     padding-top: 0.05rem;
     padding-bottom: 0.05rem;
@@ -59,6 +57,11 @@ body {
     border-radius: 25px 25px 25px 25px;
     color: white;
     cursor: pointer;
+    box-shadow: 2px 2px 2px 2px#b9bbba;
+    &:hover {
+      box-shadow: 3px 3px 3px 3px#b9bbba;
+      opacity: 75%;
+    }
   }
   
   .menu {
@@ -77,6 +80,7 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
+    box-shadow: 2px 2px 2px 2px#b9bbba;
     &:hover
     {
       background-color: #f5edff;
@@ -125,9 +129,14 @@ body {
     height: 15.63em;
     width: 20.88em;
     border-radius: 1em;
-    box-shadow: 2px 2px 2px white;
+    box-shadow: 2px 2px 2px 2px#b9bbba;
     margin-bottom: 1rem;
     position: relative;
+    &:hover
+    {
+      opacity: 75%;
+      box-shadow: 3px 3px 3px 3px#b9bbba;
+    }
   }
   .btnnouveau {
     position: absolute;
@@ -141,7 +150,6 @@ body {
     left: 15.2rem;
     font-weight: bold;
     text-align: center;
-    font-family: "roboto"; 
   }
   .btnnumero {
   position: absolute;
@@ -175,6 +183,7 @@ body {
   footer {
     background-color: #353535;
     padding-bottom: 1rem;
+    position: relative;
   }
   ol /* liste a puce */{
     list-style-type: none;
@@ -187,7 +196,7 @@ body {
 
     display: flex;
     padding-bottom: 0.25rem;
-    font-size: "roboto"sans-serif 0.75rem;
+    font-size: 0.75rem;
 }
 .fa-utensils, {
   padding-right: 0.95rem;
@@ -200,16 +209,193 @@ body {
   height: 260px;
   margin: auto;
   width: 375px;
+  position: absolute;
 }
-.animation {
-  background-color:#f6f6f6 ;
-}
-.animationbody {
+.backanimationbody {
   display: grid;
-  grid-template-rows: 62px 260px 1100px 200px;
+  grid-template-rows: 62px 1300px 200px;
   margin: auto;
   justify-content: center;
   object-fit: contain;
+}
+.backanimationbodynote {
+  display: grid;
+  grid-template-rows: 62px 1370px 200px;
+  margin: auto;
+  justify-content: center;
+  object-fit: contain;
+}
+.animation {
+  background-color:#f6f6f6 ;
+  height: 90%;
+  position: relative;
+  top: 12rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 375px;
+}
+.h4annexe {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1.4rem;
+}
+.btnmenu{
+  overflow: hidden;
+  position: relative;
+  padding-top: 0.4rem;
+  margin-left: 0.5rem;
+  height: 68px;
+  width: 348px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 0.7rem;
+  align-self: center;
+  box-shadow: 2px 2px 2px 2px#b9bbba;
+  cursor: pointer;
+  &:hover {
+    .prix { 
+      animation: slideprix 1s forwards;
+    }
+    .animationbtn {
+      display: flex;
+      position: relative;
+      height: 78px;
+      width: 60px;
+      top: -67.5px;
+      right: -348px;
+      border-radius: 0px 20px 20px 0px;
+      background-color:#99e2d0 ;
+      justify-content: center;
+      animation: slide 1s forwards;
+    }
+    .fa-check-circle {
+      animation: rotating 1s forwards;
+    }
+
+  }
+  &.opacity {
+    animation: opacity 1s;
+  }
+  &.opacity1 {
+    animation: opacity 1.5s;
+  }
+  &.opacity2 {
+    animation: opacity 2s;
+  }
+  &.opacity3 {
+    animation: opacity 2.5s;
+  }
+  &.opacity4 {
+    animation: opacity 3s;
+  }
+  &.opacity5 {
+    animation: opacity 3.5s;
+  }
+  &.opacity6 {
+    animation: opacity 4s;
+  }
+  &.opacity7 {
+    animation: opacity 4.5s;
+  }
+  &.opacity8 {
+    animation: opacity 5s;
+  }
+}
+.opacity9 {
+  margin-top: 3rem;
+  animation: opacity 5s;
+  width: 190px;
+}
+.opacitytitre1 {
+  animation: opacity 0.5s;
+}
+.opacitytitre2 {
+  animation: opacity 2.25s;
+}
+.opacitytitre3 {
+  animation: opacity 3.75s;
+}
+
+.titremenu {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #99e2d0;
+  width: 40px;
+}
+.txtmenu {
+  display: flex;
+  font-size: 1.0rem;
+  line-height: 180%;
+  padding-left: 1rem;
+  flex-direction: column;
+  overflow: hidden;
+}
+.fa-check-circle {
+  color: white;
+  margin: auto;
+}
+.descriptiontxt {
+  display: flex;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+}
+.descriptionanim {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.prix {
+  display: flex;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+@keyframes opacity{
+  from {
+    opacity: 0;
+  }
+  to {
+     opacity: 1;
+  }
+}
+@keyframes slide {
+  from {transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+@keyframes rotating {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+@keyframes slideprix {
+  from {transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+@keyframes slidein {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+@keyframes div {
+  0% {
+    transform: width(100%);
+  }
+  100%{
+    transform: width(70%);
+  }
 }
   /*# sourceMappingURL=style.css.map */
   
