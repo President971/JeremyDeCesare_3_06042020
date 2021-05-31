@@ -1,6 +1,7 @@
 body {
     margin: auto;
     font-family: "Roboto";
+    height: 100vh;
   }
   
   header {
@@ -22,7 +23,9 @@ body {
     padding-right: 1rem;
   }  
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
   }
   
   h3,h2 {
@@ -36,10 +39,15 @@ body {
   h4 {
     font-size: 1rem;
     font-family: "Shrikhand";
-    align-self: center;
-
   }
-  
+  h5 {
+    font-size: 1.4rem;
+    font-family: "Shrikhand";
+    margin: auto;
+  }
+  .lieutxt,.descriptiontxt {
+    font-weight: 300;
+  }
   .reservez {
     text-align: center;
     margin-bottom: 2rem;
@@ -202,7 +210,7 @@ body {
   text-decoration: none;
   color: white;
 }
-.fa-utensils, {
+.fa-utensils {
   padding-right: 0.95rem;
 }
 .fa-hands-helping {
@@ -237,11 +245,6 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 375px;
-}
-.h4annexe {
-  padding-left: 1rem;
-  padding-top: 0.5rem;
-  font-size: 1.4rem;
 }
 .btnmenu{
   overflow: hidden;
@@ -351,10 +354,34 @@ body {
 }
 .prix {
   display: flex;
-  font-weight: bold;
+  font-weight: 600;
   padding-right: 1.5rem;
 }
-
+.fa-heart {
+  display: flex;
+  color: rgb(59, 91, 152);
+  background: rgb(233,114,218);
+  background: linear-gradient(123deg, rgba(164,91,220,1) 0%, rgba(233,114,218,1)100%);
+  clear: both;
+.heart {
+  align-self: center;
+  padding-left: 4.5rem;
+  cursor: pointer;
+}
+.heartagencement {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+@keyframes chargeur {
+  0% {
+    transform: rotate(360) scale(3);
+  }
+  100% {
+    transform: rotate(360) scale(1);
+  }
+}
 @keyframes opacity{
   from {
     opacity: 0;
@@ -384,7 +411,7 @@ body {
   }
 
   to {
-    width: 260px;
+    width: 260px;}
   }
 }
 
