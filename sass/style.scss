@@ -198,6 +198,10 @@ body {
     padding-bottom: 0.25rem;
     font-size: 0.75rem;
 }
+.mailto {
+  text-decoration: none;
+  color: white;
+}
 .fa-utensils, {
   padding-right: 0.95rem;
 }
@@ -253,8 +257,8 @@ body {
   box-shadow: 2px 2px 2px 2px#b9bbba;
   cursor: pointer;
   &:hover {
-    .prix { 
-      animation: slideprix 1s forwards;
+    .descriptiontxt{ 
+      animation: slidein 1s forwards;
     }
     .animationbtn {
       display: flex;
@@ -343,11 +347,12 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-right: 1rem;
 }
 .prix {
   display: flex;
   font-weight: bold;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 @keyframes opacity{
@@ -373,29 +378,15 @@ body {
       transform: rotate(360deg);
   }
 }
-@keyframes slideprix {
-  from {transform: translateX(0px);
-  }
-  to {
-    transform: translateX(-60px);
-  }
-}
 @keyframes slidein {
   from {
-    width: 100%;
+    width: 348px;
   }
 
   to {
-    width: 60%;
+    width: 260px;
   }
 }
-@keyframes div {
-  0% {
-    transform: width(100%);
-  }
-  100%{
-    transform: width(70%);
-  }
-}
+
   /*# sourceMappingURL=style.css.map */
   
