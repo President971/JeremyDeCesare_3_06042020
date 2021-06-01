@@ -485,15 +485,24 @@ li {
 }
 
 .fa-heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #e972da;
-  background: linear-gradient(123deg, #a45bdc 0%, #e972da 100%);
-  clear: both;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  padding: .2em;
 }
 
-.fa-heart .heart {
+.fa-heart::before {
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.fa-heart:hover::before {
+  content: "\f004";
+  color: #bb63db;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.heart {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -501,7 +510,7 @@ li {
   cursor: pointer;
 }
 
-.fa-heart .heartagencement {
+.heartagencement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
