@@ -632,17 +632,16 @@ li {
 
 .spinner {
   width: 100%;
-  height: auto;
+  min-height: 2340px;
   position: absolute;
   content: "";
-  position: absolute;
   width: 100%;
   height: 100%;
   z-index: 100001;
   background: #0b0b0b;
   opacity: 0.7;
-  -webkit-animation: custom-loadingbefore 3s 3s linear forwards;
-          animation: custom-loadingbefore 3s 3s linear forwards;
+  -webkit-animation: custom-loadingbefore 0.01s 3s linear forwards;
+          animation: custom-loadingbefore 0.01s 3s linear forwards;
 }
 
 .custom-loading-spinner {
@@ -702,23 +701,23 @@ li {
 
 @-webkit-keyframes custom-loadingbefore {
   0% {
-    -webkit-transform: scale(1) translateX(100000px);
-            transform: scale(1) translateX(100000px);
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px);
   }
   100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: scale(0) translateX(100000px);
+            transform: scale(0) translateX(100000px);
   }
 }
 
 @keyframes custom-loadingbefore {
   0% {
-    -webkit-transform: scale(1) translateX(100000px);
-            transform: scale(1) translateX(100000px);
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px);
   }
   100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: scale(0) translateX(100000px);
+            transform: scale(0) translateX(100000px);
   }
 }
 /*# sourceMappingURL=style.css.map */
