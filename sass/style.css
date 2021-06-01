@@ -488,7 +488,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #3b5b98;
   background: #e972da;
   background: linear-gradient(123deg, #a45bdc 0%, #e972da 100%);
   clear: both;
@@ -551,6 +550,24 @@ li {
   }
 }
 
+@-webkit-keyframes opacity2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes slide {
   from {
     -webkit-transform: translateX(0px);
@@ -610,6 +627,98 @@ li {
   }
   to {
     width: 260px;
+  }
+}
+
+.spinner {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100001;
+  background: #0b0b0b;
+  opacity: 0.7;
+  -webkit-animation: custom-loadingbefore 3s 3s linear forwards;
+          animation: custom-loadingbefore 3s 3s linear forwards;
+}
+
+.custom-loading-spinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-loading-spinner::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10002;
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  border: 5px solid #e972da;
+  border-top: 5px solid #9356dc;
+  border-right: 5px solid #9356dc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: custom-loadingafter 3s linear forwards;
+          animation: custom-loadingafter 3s linear forwards;
+}
+
+@-webkit-keyframes custom-loadingafter {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  99% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes custom-loadingafter {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  99% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes custom-loadingbefore {
+  0% {
+    -webkit-transform: scale(1) translateX(100000px);
+            transform: scale(1) translateX(100000px);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes custom-loadingbefore {
+  0% {
+    -webkit-transform: scale(1) translateX(100000px);
+            transform: scale(1) translateX(100000px);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 /*# sourceMappingURL=style.css.map */
