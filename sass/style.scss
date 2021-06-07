@@ -10,7 +10,7 @@ body {
     padding: 0.5rem;
   }
   
-  .localisation {
+  .localisation {                             /* Partie Localistation Page Principale */
     background-color: #eaeaea;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     color: #353535;
     padding-right: 1rem;
   }  
-  h1 {
+  h1 {                                  /* Les Titres */
     font-size: 1.8rem;
     font-weight: bold;
     
@@ -49,12 +49,12 @@ body {
   .lieutxt,.descriptiontxt {
     font-weight: 300;
   }
-  .reservez {
+  .reservez {                            /* Bouton Explorer page principale */
     text-align: center;
     margin-bottom: 2rem;
   }
   
-  .btnexplorer{
+  .btnexplorer{              
     text-align: center;
     padding-top: 0.05rem;
     padding-bottom: 0.05rem;
@@ -77,7 +77,7 @@ body {
     padding-bottom: 2rem;
   }
   
-  .btnfonctionnement {
+  .btnfonctionnement {                            /* Partie Fonctionnement Page Principale */
     position: relative;
     padding-top: 0.05rem;
     padding-bottom: 0.05rem;
@@ -115,11 +115,9 @@ body {
       padding-right: 1.3rem;
     }
   }
-  .nounderline {
+  .nounderline {                                /* Partie Restaurants Page Principale */
     text-decoration: none;
   }
-
-  
   .restaurant {
     background-color: #f6f6f6;
   }
@@ -191,7 +189,7 @@ body {
     color: black;
     text-decoration: none;
   }
-  footer {
+  footer {                                                   /* FOOTER */
     background-color: #353535;
     padding-bottom: 1rem;
     position: relative;
@@ -225,7 +223,7 @@ body {
   width: 375px;
   position: absolute;
 }
-.backanimationbody {
+.backanimationbody {                          /* Pages Annexes */
   display: grid;
   grid-template-rows: 62px 1300px 200px;
   margin: auto;
@@ -248,7 +246,7 @@ body {
   border-top-right-radius: 25px;
   width: 375px;
 }
-.btnmenu{ /* Menu des Pages de Restaurant */
+.btnmenu{                                                  /* Menu des Pages de Restaurant */
   overflow: hidden;
   position: relative;
   padding-top: 0.4rem;
@@ -362,7 +360,7 @@ body {
   font-weight: 600;
   padding-right: 1.5rem;
 }
-.heart .fas {  /* Coeur */
+.heart .fas {                                                           /* Coeur */
     position: relative;
     float: right;
     right: 50px;
@@ -388,7 +386,7 @@ body {
     right: -225px;
   }
 }
-@keyframes chargeur {  /* Animation du Site */
+@keyframes chargeur {                                                      /* Animation du Site */
   0% {
     transform: rotate(0turn) scale(3);
   }
@@ -480,3 +478,32 @@ body {
 }
 
   /*# sourceMappingURL=style.css.map */
+  @media screen and (min-width: 768px)and(max-width: 1024px) {
+    body {
+      margin: auto;
+    }
+    .restovignette {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .restobloc {
+      justify-content: space-around;
+      padding: 2rem;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    body {
+      justify-content: center;
+    }
+    .restovignette {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .nounderline {
+      padding: 2rem;
+    }
+  }
