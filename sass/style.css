@@ -145,6 +145,10 @@ h5 {
   cursor: pointer;
 }
 
+.fa-mobile-alt.fa-list-ul, .fa-list-ul.fa-list-ul, .fa-store.fa-list-ul {
+  padding-right: 1.3rem;
+}
+
 .nounderline {
   text-decoration: none;
 }
@@ -274,8 +278,7 @@ li {
 }
 
 .fa-hands-helping {
-  padding-right: 0.5rem;
-  size: 2rem;
+  padding-right: 0.6rem;
 }
 
 .photoresto {
@@ -505,7 +508,7 @@ li {
 
 .heart .fas:hover {
   background: linear-gradient(123deg, #e972da 0%, #a45bdc 50%);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0;
@@ -526,24 +529,24 @@ li {
 @-webkit-keyframes chargeur {
   /* Animation du Site */
   0% {
-    -webkit-transform: rotate(360) scale(3);
-            transform: rotate(360) scale(3);
+    -webkit-transform: rotate(0turn) scale(3);
+            transform: rotate(0turn) scale(3);
   }
   100% {
-    -webkit-transform: rotate(360) scale(1);
-            transform: rotate(360) scale(1);
+    -webkit-transform: rotate(3turn) scale(1);
+            transform: rotate(3turn) scale(1);
   }
 }
 
 @keyframes chargeur {
   /* Animation du Site */
   0% {
-    -webkit-transform: rotate(360) scale(3);
-            transform: rotate(360) scale(3);
+    -webkit-transform: rotate(0turn) scale(3);
+            transform: rotate(0turn) scale(3);
   }
   100% {
-    -webkit-transform: rotate(360) scale(1);
-            transform: rotate(360) scale(1);
+    -webkit-transform: rotate(3turn) scale(1);
+            transform: rotate(3turn) scale(1);
   }
 }
 

@@ -111,6 +111,9 @@ body {
       color: #9356dc;
       cursor: pointer;
     }
+    &.fa-list-ul {
+      padding-right: 1.3rem;
+    }
   }
   .nounderline {
     text-decoration: none;
@@ -214,8 +217,7 @@ body {
   padding-right: 0.95rem;
 }
 .fa-hands-helping {
-  padding-right: 0.5rem;
-  size: 2rem;
+  padding-right: 0.6rem;
 }
 .photoresto {
   height: 260px;
@@ -372,7 +374,7 @@ body {
 }
 .heart .fas:hover{
     background: linear-gradient(123deg, rgba(233,114,218,1) 0%, rgba(164,91,220,1) 50%);
-    background-clip: text;
+    background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0;
@@ -388,10 +390,10 @@ body {
 }
 @keyframes chargeur {  /* Animation du Site */
   0% {
-    transform: rotate(360) scale(3);
+    transform: rotate(0turn) scale(3);
   }
   100% {
-    transform: rotate(360) scale(1);
+    transform: rotate(3turn) scale(1);
   }
 }
 @keyframes opacity{
